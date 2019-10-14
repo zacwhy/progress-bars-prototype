@@ -1,0 +1,26 @@
+.progress-container {
+  background-color: #ccc;
+  height: 30px;
+  position: relative;
+  width: 100%;
+
+  margin-bottom: 0.5em;
+}
+.progress-bar {
+  height: 100%;
+  position: absolute;
+}
+.progress-text {
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  font-weight: bold;
+}
+.in {
+  background-color: #3c3;
+}
+.out {
+  background-color: #c33;
+}
