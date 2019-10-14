@@ -3,7 +3,7 @@
 main()
 
 async function main() {
-  const url = 'http://pb-api.herokuapp.com/bars'
+  const url = 'https://pb-api.herokuapp.com/bars'
   const data = await fetch(url).then(res => res.json())
   createProgressBars(data.limit, data.bars, data.buttons)
 }
