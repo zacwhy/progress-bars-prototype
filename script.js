@@ -1,27 +1,10 @@
 'use strict'
 
-const mockData = {
-  "buttons": [
-    0,
-    10,
-    38,
-    -13,
-    -18
-  ],
-  "bars": [
-    62,
-    45,
-    62
-  ],
-  "limit": 230
-}
-
 main()
 
 async function main() {
   const url = 'http://pb-api.herokuapp.com/bars'
-  // const data = await fetch(url).then(res => res.json())
-  const data = mockData
+  const data = await fetch(url).then(res => res.json())
   createProgressBars(data.limit, data.bars, data.buttons)
 }
 
